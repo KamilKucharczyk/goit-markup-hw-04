@@ -1,0 +1,319 @@
+/* GLOBAL STYLE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --background-page-color: #ffffff;
+  --color-background-dark-grey: #2f303a;
+  --color-background-blue: #2196f3;
+  --color-background-light-grey: #f5f4fa;
+  --text-color-black: #212121;
+  --text-color-blue: #2094f3;
+  --text-color-grey: #757575;
+  --text-color-white: #ffffff;
+  --header-color-border: #ececec;
+}
+body {
+  background-color: var(--background-page-color);
+  color: var(--text-color-black);
+  font-family: "Roboto", sans-serif;
+}
+img {
+  display: block;
+}
+.menu {
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--header-color-border);
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.menu-container {
+  display: flex;
+  justify-content: center;
+}
+.menu-logo-top {
+  color: var(--text-color-black);
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.menu-logo {
+  color: var(--text-color-blue);
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+.navigation-list {
+  display: flex;
+  gap: 46px;
+  list-style-type: none;
+  width: 254px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-right: 371px;
+}
+.navigation-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--text-color-black);
+  text-decoration: none;
+}
+.navigation-link:hover,
+.navigation-link:focus {
+  color: var(--text-color-blue);
+}
+.contact-list {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  gap: 50px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.mail {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--text-color-grey);
+  text-decoration: none;
+}
+.mail:hover,
+.mail:focus {
+  color: var(--text-color-blue);
+}
+.tel {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--text-color-grey);
+  text-decoration: none;
+}
+.tel:hover,
+.tel:focus {
+  color: var(--text-color-blue);
+}
+.solution-order {
+  background-color: var(--color-background-dark-grey);
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.primary-header {
+  color: var(--text-color-white);
+  font-style: normal;
+  font-size: 44px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.06em;
+  max-width: 696px;
+}
+.solution-order button {
+  background-color: var(--color-background-blue);
+  color: var(--text-color-white);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  padding-top: 10px;
+  padding-right: 41px;
+  padding-bottom: 10px;
+  padding-left: 42px;
+}
+.button-properties {
+  width: 200px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-style: none;
+}
+.feature-list {
+  display: flex;
+  list-style-type: none;
+  gap: 30px;
+}
+.feature-list-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--text-color-grey);
+}
+.feature-list h3 {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.14;
+  padding-bottom: 10px;
+}
+.section-what-we-do {
+  padding-top: 0;
+}
+.what-we-do {
+  font-style: normal;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.what-we-do-list {
+  display: flex;
+  list-style-type: none;
+  gap: 30px;
+  width: 370px;
+}
+.our-team {
+  background-color: var(--color-background-light-grey);
+  height: 648px;
+}
+.our-team-list {
+  display: flex;
+  list-style-type: none;
+  width: 1170px;
+  gap: 30px;
+}
+.team-members {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--background-page-color);
+}
+.our-team-header {
+  font-style: normal;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  padding-right: 695;
+  padding-left: 695;
+  margin-bottom: 50px;
+}
+.our-team-list h4 {
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  margin-top: 30px;
+}
+.our-team-list p {
+  color: var(--text-color-grey);
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  margin-top: 10px;
+  padding-bottom: 30px;
+}
+.footer {
+  background-color: var(--color-background-dark-grey);
+  height: 252px;
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  gap: 30px;
+}
+.menu-logo-bottom {
+  color: var(--text-color-white);
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+  width: fit-content;
+}
+.adress-container {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  font-style: normal;
+}
+.footer .text {
+  color: var(--text-color-white);
+  font-size: 14px;
+  line-height: 1.71;
+}
+.projects-container h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  padding-top: 20px;
+}
+.projects-container p {
+  color: var(--text-color-grey);
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
+.buttons-list {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  list-style-type: none;
+  margin-bottom: 50px;
+}
+.project-button {
+  background-color: var(--color-background-light-grey);
+  color: var(--text-color-black);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding-top: 6px;
+  padding-right: 22px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  border-radius: 4px;
+  border-style: none;
+}
+.project-button:hover,
+.project-button:focus {
+  background-color: var(--color-background-blue);
+  color: var(--text-color-white);
+}
+.projects-container {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.project-card {
+  background: #ffffff;
+  width: 370px;
+}
+.project-caption {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-bottom: 20px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
