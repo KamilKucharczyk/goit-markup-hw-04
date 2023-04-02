@@ -127,15 +127,19 @@ img {
   color: var(--text-color-blue);
 }
 .solution-order {
-  background-image: url(../images/primary-header-background.jpg);
-  background-image: linear-gradient(#2f303a66 40%);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/primary-header-background.jpg);
   border: 1px solid #000000;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  max-width: 1600px;
+  margin: auto;
 }
 .main-content {
   display: flex;
@@ -243,11 +247,15 @@ img {
   margin-right: 32px;
   margin-left: 32px;
 }
-.social-media-icon:hover,
-.social-media-icon:focus {
+.social-media-item {
+  padding: 12px;
+  border-radius: 50%;
+  display: flex;
+}
+.social-media-item:hover,
+.social-media-item:focus {
   background-color: var(--color-background-blue);
   fill: var(--text-color-white);
-  border-radius: 50%;
 }
 .our-team-header {
   font-style: normal;
@@ -300,10 +308,13 @@ img {
 }
 .client-logo:hover {
   fill: var(--color-background-blue);
+  border: 1px solid var(--color-background-blue);
 }
 .footer {
   background-color: var(--color-background-dark-grey);
-  height: 252px;
+  display: flex;
+}
+.footer .container {
   display: flex;
 }
 .footer-container {
@@ -313,8 +324,9 @@ img {
   padding-bottom: 60px;
   gap: 30px;
 }
-.footer-social-icon:hover {
-  background-color: var(--color-background-blue);
+.footer-social-container {
+  padding-top: 72px;
+  margin-left: 70px;
 }
 .menu-logo-bottom {
   color: var(--text-color-white);
@@ -365,10 +377,19 @@ img {
 }
 .footer-social-icon {
   fill: var(--text-color-white);
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
   width: 20px;
   height: 20px;
+}
+.footer-social-item {
+  padding: 12px;
+  border-radius: 50%;
+  display: flex;
+  fill: var(--text-color-white);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-social-item:hover,
+.footer-social-item:focus {
+  background-color: var(--color-background-blue);
 }
 .projects-container h3 {
   font-style: normal;
@@ -410,6 +431,8 @@ img {
 .project-button:focus {
   background-color: var(--color-background-blue);
   color: var(--text-color-white);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .projects-container {
   display: flex;
@@ -420,6 +443,11 @@ img {
 .project-card {
   background: #ffffff;
   width: 370px;
+}
+.project-card:hover,
+.project-card:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .project-caption {
   display: flex;
