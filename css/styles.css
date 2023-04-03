@@ -127,6 +127,7 @@ img {
   color: var(--text-color-blue);
 }
 .solution-order {
+  background-color: var(--color-background-dark-grey);
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -136,9 +137,9 @@ img {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
-  max-width: 1600px;
   margin: auto;
 }
 .main-content {
@@ -240,20 +241,20 @@ img {
   justify-content: space-evenly;
   align-items: center;
   list-style-type: none;
-  fill: var(--icon-color-grey);
   gap: 10px;
   padding-top: 16px;
   padding-bottom: 18px;
   margin-right: 32px;
   margin-left: 32px;
 }
-.social-media-item {
+.social-link {
   padding: 12px;
   border-radius: 50%;
   display: flex;
+  fill: var(--icon-color-grey);
 }
-.social-media-item:hover,
-.social-media-item:focus {
+.social-link:hover,
+.social-link:focus {
   background-color: var(--color-background-blue);
   fill: var(--text-color-white);
 }
@@ -380,15 +381,15 @@ img {
   width: 20px;
   height: 20px;
 }
-.footer-social-item {
+.footer-social-link {
   padding: 12px;
   border-radius: 50%;
   display: flex;
   fill: var(--text-color-white);
   background-color: rgba(255, 255, 255, 0.1);
 }
-.footer-social-item:hover,
-.footer-social-item:focus {
+.footer-social-link:hover,
+.footer-social-link:focus {
   background-color: var(--color-background-blue);
 }
 .projects-container h3 {
