@@ -69,7 +69,7 @@ img {
   width: 254px;
   padding-top: 32px;
   padding-bottom: 32px;
-  margin-right: 371px;
+  margin-right: 345px;
 }
 .navigation-link {
   font-weight: 500;
@@ -93,6 +93,8 @@ img {
 .mail-icon {
   width: 16px;
   height: 12px;
+  vertical-align: middle;
+  margin-right: 10px;
 }
 .contact-item:hover,
 .contact-item:focus {
@@ -113,6 +115,8 @@ img {
 .tel-icon {
   width: 10px;
   height: 16px;
+  vertical-align: middle;
+  margin-right: 10px;
 }
 .tel {
   font-weight: 500;
